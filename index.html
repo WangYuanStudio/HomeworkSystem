@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>网园编程部作业系统</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="icon" href="img/logo.ico">
+	<!-- <script type="text/javascript" src="js/limit.js"></script> -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class="header">
+		<span id="notice">作业公告</span>
+		<span id="me">我的作业</span>
+		<div id="name">
+			&nbsp;&nbsp;&nbsp;<b>UserName</b>&nbsp;
+			<label id="down">▼</label>
+			<ul class="menu">
+				<!-- <li id="info">用户信息</li> -->
+				<li id="logout">退出登录</li>
+			</ul>
+		</div>
+	</div>
+	<div class="main" id="main_notice">
+		<div class="box_notice">
+			<div class="notice_left"></div>
+			<div class="notice_right">
+				<div class="notice_title"><h3>None</h3><span>From 0000-00-00 To 0000-00-00</span></div>
+				<div class="notice_content">
+					<p>无法获取公告内容:)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main" id="main_me">
+		<div class="box_task">
+			<div class="task_left"></div>
+			<div class="task_right">
+				<h3>
+					最近作业：
+					<span id="task_title" value='0'>暂无</span>
+					<span id="task_end_time">截止上交：0000-00-00 00:00</span>
+				</h3>
+				<span id="task_content">无法获取内容:)</span>
+				<a href="javascript:;" class="a-upload">
+					<input type="file" id="input-file" name="file" accept="aplication/zip,aplication/rar,aplication/7z" class="upload-note"><span>上传作业</span>
+				</a>
+			</div>
+		</div>
+		<div class="history">
+			<div class="history_title">
+				<h3>历史作业记录</h3>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>作业标题</th>
+						<th>状态</th>
+						<th>提交时间</th>
+						<th>等级</th>
+						<th>评语</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="5">你还没有上传过任何作业:)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="footer">&copy;网园资讯工作室·编程部 2017</div>
+</body>
+</html>

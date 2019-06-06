@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>Bootstrap 101 Template</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .main {
+      margin-top: 20px;
+    }
+    .main h1 {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .row {
+
+      position: relative;
+      left: 586px;
+    }
+    #notice_title{
+      width:40%;
+
+    }
+    #ftitle{
+      margin-bottom: 20px;
+    }
+    #notice_content{
+      width: 50%;
+      height: 100px;
+      resize:none;
+
+    }
+    #ftitle2{
+      margin-bottom: 20px;
+    }
+    #ftitle3{
+
+      margin-bottom: 20px;
+
+    }
+    #notice_cishu{
+      width: 10%;
+
+      resize:none;
+
+
+    }
+    #button4{
+      margin-left: -1085px;
+
+    }
+    #iendtime{
+      width: 30%;
+
+    }
+    #notice{
+      margin-top: 20px;
+
+    }
+
+
+
+  </style>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="./js/user.js"></script>
+  <script type="text/javascript" src="./js/hws.js"></script>
+  <script type="text/javascript" src="./js/notice.js"></script>
+  <script type="test/javascript" src="../js/jQuery v3.1.1"></script>
+
+</head>
+<body>
+
+
+
+
+  <div class="container main">
+    <h1>作业系统后台管理</h1>
+
+    <!--搜索-->
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">用户管理</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">作业管理</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">作业发布</a></li>
+
+    </ul>
+
+    <!-- 用户管理 -->
+    <div class="tab-content" align="center">
+      <div role="tabpanel" class="tab-pane active" id="home">
+        <table class="table table-striped" style="font-size:18px; text-align:center" id="table1">
+          <tr>
+            <td>#</td>
+
+            <td><span>User</span></td>
+            <td><span>Number</span></td>
+            <td><span>Password</span></td>
+            <td><span>Sex</span></td>
+            <td><span>Edit</span></td>
+            <td><span>Forbidden</span></td>
+          </tr>
+        </table>
+
+
+        <!--用户管理分页-->
+        <nav aria-label="Page navigation" id="page1">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+
+      <!-- 作业管理 -->
+      <div role="tabpanel" class="tab-pane" id="profile">   
+       <table class="table table-striped" style="font-size:18px; text-align:center;table-layout:fixed" id="table2" >
+        <tr>
+          <td width="10px">#</td>
+          <td width="100px">Userid</td>
+          <td width="200px">hwsnum</td>
+          <td width="300px">hwsurl</td>
+          <td width="50px">level</td>
+          <td width="100px">comment</td>
+          <td width="200px">time</td>
+          <td>操作</td>
+        </tr>
+<!--     <tr>
+    <td>#</td>
+    <td>陈渊默</td>
+    <td>一轮考核</td>
+    <td>hwsurl</td>
+    <td>A</td>
+    <td style="white-space:nowrap; overflow:hidden;">但是那苏大叔你都撒都删哦都不拿搜到速度</td>
+    <td>2017-10-7</td>
+  </tr> -->
+
+<!--   评价按钮
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">评价</button> -->
+
+</table>
+</div>
+<!--公告发布-->
+<div role="tabpanel" class="tab-pane" id="messages">
+  <div id="content"></div>
+
+  <div class="input-group input-group-lg" id="ftitle" >
+    <span class="input-group-addon" id="sizing-addon1">Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <input type="text" class="form-control" placeholder="title" aria-describedby="sizing-addon1" id="notice_title">
+  </div>
+
+  <div class="input-group input-group-lg" id="ftitle2">
+    <span class="input-group-addon" id="sizing-addon1">Content</span>
+    <textarea class="form-control" rows="3" id="notice_content" placeholder="content"></textarea>
+  </div>
+
+  <div class="input-group input-group-lg" id="ftitle3" >
+    <span class="input-group-addon" id="sizing-addon1">Number</span>
+    <input type="text" class="form-control" placeholder="number" aria-describedby="sizing-addon1" id="notice_cishu">
+  </div>
+
+  <div class="input-group input-group-lg" id="endtime" >
+    <span class="input-group-addon" id="sizing-addon1">Endtime</span>
+    <input type="text" class="form-control" placeholder="endtime" aria-describedby="sizing-addon1" id="iendtime" >
+  </div>
+
+  <!-- 提交 -->
+  <button class="btn btn-default" type="submit" value="notice" id="button4" id="notice" >发布  </button>
+
+</div>
+
+</div>
+
+<!-- 模态框 -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel2">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">level:</label>
+            
+            <input type="text" class="form-control" id="recipient-name">
+          </div>  
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" value="begin" data-dismiss="modal">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 模态框2 user -->
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Name:</label>
+            <input type="text" class="form-control" id="newname">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Stunumber:</label>
+            <input type="text" class="form-control" id="newstunumber">
+          </div>        
+            <div class="form-group">
+            <label for="recipient-name" class="control-label">Sex:</label>
+            <input type="text" class="form-control" id="newsex">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary"  value="userbegin" data-dismiss="modal">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>

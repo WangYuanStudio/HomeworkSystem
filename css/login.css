@@ -1,0 +1,65 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+
+body{
+	text-align: center;
+	/*background: url('http://hws-1253473509.cosgz.myqcloud.com/img/bg.jpg') no-repeat fixed;*/
+	background: rgb(102, 140, 163) url('../img/bg.jpg') no-repeat center fixed;
+}
+
+.form{
+	position: absolute;
+	right: 15%;
+	width: 240px;
+	top: calc(50% - 208px);
+	padding: 64px 40px;
+	border: 1px solid #CCC;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 0.65);
+	box-shadow: 0px 1px 1px 0px;
+	display: none;
+}
+
+b{
+	display: block;
+	height: 40px;
+	/*line-height: 32px;*/
+	font-size: 20px;
+}
+
+span{
+	display: block;
+	margin-top: 16px;
+	text-align: left;
+	font-size: 14px;
+	color: #444;
+}
+
+input{
+	width: 100%;
+	height: 28px;
+	/*border-radius: 4px;*/
+	border: 1px solid #AAA;
+	outline: none;
+	text-indent: 0.5em;
+	font-size: 12px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="submit"]{
+	margin-top: 32px;
+	height: 32px;
+	background-color: #4A4;
+	color: white;
+	cursor: pointer;
+	border: none;
+}
+
+.footer{
+	font-size: 12px;
+	color: #666;
+	margin-top: 32px;
+}

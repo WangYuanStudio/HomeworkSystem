@@ -1,0 +1,344 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+body{
+	/*background: url('http://hws-1253473509.cosgz.myqcloud.com/img/bg.jpg') no-repeat fixed;*/
+	background: rgb(102, 140, 163) url('../img/bg.jpg') no-repeat fixed;
+	background-position: -80px 0;
+	margin: 0;
+	position: relative;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	width: calc(80%);
+	height: 48px;
+	line-height: 48px;
+	padding: 0 10%;
+	background-color: rgba(0,0,0,0.9);
+	color: #CCC;
+	border-bottom: 1px solid #666;
+	min-width: 400px;
+	z-index: 98;
+}
+
+.header span{
+	cursor: pointer;
+	height: 48px;
+	padding: 0 16px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.header span:hover, #name:hover{
+	background-color: rgba(255,255,255,0.3);
+	color: white;
+}
+
+.header #name{
+	position: absolute;
+	top: 0;
+	right: 10%;
+	width: 120px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.header #name #down{
+	cursor: pointer;
+}
+
+.header #name:hover .menu{
+	display: block;
+}
+
+.menu{
+	background-color: rgba(0,0,0,0.75);
+	width: 120px;
+	position: absolute;
+	right: 0;
+	top: 48px;
+	text-align: center;
+	padding: 8px 0 16px 0;
+	display: none;
+	z-index: 99;
+	list-style: none;
+}
+
+.menu li{
+	color: #CCC;
+	height: 32px;
+	margin: 0;
+	line-height: 32px;
+	cursor: pointer;
+}
+
+.menu li:hover{
+	color: #ADF;
+	background-color: rgba(0,0,0,0);
+}
+
+.main{
+	margin-top: 80px;
+	padding-top: 64px;
+	margin-left: 10%;
+	min-height: calc(100% - 208px);
+	max-width: 80%;
+	display: none;
+}
+
+.box_notice{
+	width: 100%;
+	margin: 16px 0;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	min-width: 640px;
+	min-height: 120px;
+	padding-bottom: 4px;
+	cursor: default;
+	position: relative;
+}
+
+.box_notice:hover{
+	outline: #ADF solid 2px;
+	outline-offset: 2px;
+	box-shadow: 0px 0px 16px 2px #666;
+}
+
+.notice_left{
+	position: absolute;
+	background: url(../img/notice.png) no-repeat center;
+	background-size: 80px auto;
+	width: 120px;
+	height: 100%;
+	min-height: 124px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.notice_right{
+	width: calc(100% - 152px);
+	margin-left: 120px;
+	padding: 16px 16px;
+}
+
+.notice_right .notice_title{
+	border-bottom: 1px solid #666;
+	height: 32px;
+	position: relative;
+}
+
+.notice_right .notice_title span{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 12px;
+	color: #888;
+	line-height: 32px;
+}
+
+.notice_right p{
+	font-size: 14px;
+	color: #BBB;
+	margin-top: 8px;
+}
+
+.notice_right p a{
+	color: #08F;
+	text-decoration: none;
+}
+
+.notice_right b{
+	color: #F80;
+	font-size: 16px;
+}
+
+#main_me{
+	position: relative;
+	color: white;
+	min-width: 640px;
+	cursor: default;
+}
+
+.box_task{
+	width: 100%;
+	margin: 16px 0;
+	height: 112px;
+	background-color: rgba(0,0,0,0.85);
+	border-bottom: 1px solid #888;
+	position: relative;
+}
+
+.task_left{
+	position: absolute;
+	background: url(../img/upload_none.png) no-repeat center;
+	background-size: 88px;
+	background-color: rgba(255,255,255,0.35);
+	width: 112px;
+	height: 112px;
+}
+
+.task_right{
+	position: absolute;
+	left: 112px;
+	height: 112px;
+	width: calc(100% - 144px);
+	padding: 16px 16px;
+}
+
+.task_right h3{
+	border-bottom: 1px solid #888;
+	line-height: 28px;
+	height: 36px;
+	position: relative;
+	color: #AAA;
+}
+
+.task_right h3 #task_title{
+	color: white;
+}
+
+.task_right h3 #task_end_time{
+	font-size: 12px;
+	font-weight: normal;
+	position: absolute;
+	right: 0;
+}
+
+.task_right #task_content{
+	display: inline-block;
+	width: calc(100% - 188px);
+	height: 40px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-top: 8px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.a-upload {
+    position: absolute;
+    width: 172px;
+	height: 36px;
+	margin-top: 8px;
+	right: 16px;
+	background-color: #1AB947;
+	border: 1px solid #444;
+	color: white;
+	outline: none;
+	cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 0;
+    text-align: center;
+    line-height: 36px;
+}
+
+.a-upload input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.a-upload:hover {
+	background-color: #2AC957;
+}
+
+.history{
+	background-color: rgba(0,0,0,0.65);
+	width: 100%;
+	min-height: 320px;
+	margin: 16px 0;
+	padding-bottom: 4px;
+}
+
+.history h3{
+	line-height: 64px;
+	text-align: center;
+}
+
+.history_title{
+	height: 64px;
+	width: calc(100% - 32px);
+	padding: 0 16px;
+	background-color: rgba(0,0,0,0.75);
+}
+
+.history table{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.history table tr{
+	height: 24px;
+}
+
+.history table th{
+	background-color: rgba(255,255,255,0.5);
+	font-size: 14px;
+	color: black;
+	cursor: default;
+}
+
+.history table td{
+	background-color: rgba(255,255,255,0.1);
+	color: #CCC;
+	height: 28px;
+	line-height: 20px;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.history table tr:hover td{
+	background-color: rgba(120,180,255,0.2);
+	color: white;
+}
+
+.history .table_title{
+	width: 200px;
+}
+
+.history .table_title a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.history .table_title a:hover{
+	/*font-weight: bold;*/
+	text-decoration: underline;
+}
+
+.history .table_status{
+	width: 88px;
+}
+
+.history .table_time{
+	width: 144px;
+}
+
+.history .table_level{
+	width: 48px;
+}
+
+.history .table_comment{
+	text-align: justify;
+	padding: 0 8px;
+}
+
+.footer{
+	position: relative;
+	text-align: center;
+	font-size: 12px;
+	color: #555;
+	line-height: 20px;
+	padding-bottom: 80px;
+}
